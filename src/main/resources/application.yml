@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: CalenderTaskReminder
+  datasource:
+    url: jdbc:mysql://localhost:3306/quartz_demo?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password:
+  quartz:
+    job-store-type: jdbc
+    properties:
+      org:
+        quartz:
+          threadPool:
+            threadCount: 5
